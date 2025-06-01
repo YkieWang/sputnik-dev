@@ -1,0 +1,9 @@
+[submodule "sputnik-zmk-config"]
+	path = sputnik-zmk-config
+	url = git@github.com:YkieWang/sputnik-zmk-config.git
+[submodule "zmk"]
+	path = zmk
+	url = git@github.com:zmkfirmware/zmk.git
+[submodule "modules/zmk-device-detector"]
+	path = modules/zmk-device-detector
+	url = git@github.com:YkieWang/zmk-device-detector.git
