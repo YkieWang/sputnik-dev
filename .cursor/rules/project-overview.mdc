@@ -1,0 +1,22 @@
+---
+description: 
+globs: 
+alwaysApply: true
+---
+# 项目结构概览
+
+本项目是一个基于 ZMK 固件的键盘项目。
+
+## 主要组成部分:
+
+*   **ZMK 固件核心**: 位于 `[zmk](mdc:zmk)` 目录，它是一个指向官方 ZMK 固件仓库的 Git 子模块。我们的模块是基于它进行开发的，你永远不应该修改zmk的代码，除非用于调试，并且调试之后要还原它。
+*   **Sputnik 键盘配置**: 位于 `[sputnik-zmk-config](mdc:sputnik-zmk-config)` 目录，这也是一个 Git 子模块，包含了针对 "sputnik" 键盘的特定 ZMK 配置。
+*   **自定义模块**:
+    *   `[modules/zmk-device-detector](mdc:modules/zmk-device-detector)`: 一个名为 `zmk-device-detector` 的自定义模块。这是我们开发的一个驱动，用于根据adc电压信息来识别不同的设备（轨迹球/旋钮/摇杆）
+*   **Git 子模块定义**: `[.gitmodules](mdc:.gitmodules)` 文件定义了项目所使用的所有 Git 子模块。
+*   **项目说明**: `[readme.md](mdc:readme.md)` 文件（当前为空），通常用于存放项目的描述信息。
+
+## 如何开始:
+
+1.  确保所有 Git 子模块都已正确初始化和更新 (`git submodule update --init --recursive`)。
+2.  主要的键盘配置文件很可能在 `[sputnik-zmk-config](mdc:sputnik-zmk-config)/config/` 目录下，特别是 `.keymap` 和 `.conf` 文件。
