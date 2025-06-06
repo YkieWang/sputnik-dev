@@ -1,5 +1,8 @@
 ---
-description:
-globs:
-alwaysApply: false
+description: 
+globs: 
+alwaysApply: true
 ---
+# 问题解决指南
+
+当在开发过程中遇到与 ZMK 或 Zephyr 相关的问题时，应优先查阅和学习 ZMK ([https://zmk.dev/docs](mdc:https:/zmk.dev/docs)) 和 Zephyr ([https://docs.zephyrproject.org/](mdc:https:/docs.zephyrproject.org)) 的官方文档来寻求解决方案。

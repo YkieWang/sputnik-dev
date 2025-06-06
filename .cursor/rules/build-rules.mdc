@@ -11,15 +11,6 @@ CONTAINER ID   IMAGE                                                            
 
 
 执行编译命令（不要使用转义符）：
-
-左手：
-docker exec -w /workspaces/zmk/app 5a5c3a8b08a6 west build -p -b nice_nano_v2 -- -DSHIELD=sputnik44_left -DZMK_CONFIG="/workspaces/zmk-config/config"
-右手：
-docker exec -w /workspaces/zmk/app 5a5c3a8b08a6 west build -p -b nice_nano_v2 -- -DSHIELD=sputnik44_left -DZMK_CONFIG="/workspaces/zmk-config/config"
-
-
-当需要添加额外的modules的时候：
-
 左手：
 docker exec -w /workspaces/zmk/app 5a5c3a8b08a6 west build -p -b nice_nano_v2 -- -DSHIELD=sputnik44_left -DZMK_CONFIG="/workspaces/zmk-config/config/" -DZMK_EXTRA_MODULES="/workspaces/zmk-modules/zmk-device-detector"
 右手：
